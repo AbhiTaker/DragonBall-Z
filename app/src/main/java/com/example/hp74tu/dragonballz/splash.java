@@ -22,12 +22,21 @@ public class splash extends AppCompatActivity {
         {
             try{
                 sleep(3000);
-            }catch (Exception e){}
+            }catch (Exception e){
 
-            Intent info = new Intent(splash.this , home.class);
-            startActivity(info);
-            finish();
+            }
+            finally {
+                Intent gohome = new Intent(splash.this , home.class);
+                startActivity(gohome);
 
+            }
         }
+    }
+
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        finish();
     }
 }
