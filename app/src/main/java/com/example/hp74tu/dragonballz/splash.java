@@ -26,7 +26,7 @@ public class splash extends AppCompatActivity {
 
             }
             finally {
-                Intent gohome = new Intent(splash.this , home.class);
+                Intent gohome = new Intent(splash.this , menu.class);
                 startActivity(gohome);
 
             }

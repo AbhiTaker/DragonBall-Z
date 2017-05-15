@@ -9,24 +9,27 @@
         android:roundIcon="@mipmap/logo1"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <activity android:name=".splash">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity android:name=".home">
             <intent-filter>
-                <action android:name="android.intent.action.STARTINGPOINT" />
+                <action android:name="android.intent.action.HOME" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity android:name=".menu">
+            <intent-filter>
+                <action android:name="android.intent.action.MENU" />
 
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
