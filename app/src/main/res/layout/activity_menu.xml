@@ -4,17 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="2dp"
     tools:context="com.example.hp74tu.dragonballz.menu">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="DRABGON"/>
+
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical" >
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
 
 
 
@@ -31,6 +31,7 @@
 
         <ListView
             android:id="@android:id/list"
+            android:padding="20px"
             android:layout_height="match_parent"
             android:layout_width="match_parent"
             android:background="#aaaaaa"
@@ -40,5 +41,6 @@
         </ListView>
 
     </LinearLayout>
+
 
 </android.support.constraint.ConstraintLayout>
