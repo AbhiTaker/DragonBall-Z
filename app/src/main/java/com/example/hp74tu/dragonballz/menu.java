@@ -13,7 +13,8 @@ import static android.R.attr.id;
 
 public class menu extends ListActivity {
 
-    String classes[]={"HOME","GOKU","GOHAN","VEGETA","SUPERSAIYEN","WALLPAPERS"};
+    String classes[]={"Home","GOKU","GOHAN","VEGETA","SUPERSAIYEN","WALLPAPERS","Contact"};
+    String classname[]={"HOME","GOKU","GOHAN","VEGETA","SUPERSAIYEN","WALLPAPERS","CONTACT US"};
     TextView content;
 
 
@@ -24,7 +25,7 @@ public class menu extends ListActivity {
         setContentView(R.layout.activity_menu);
         content = (TextView)findViewById(R.id.output);
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,classes);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,classname);
 
 
         // Assign adapter to classes

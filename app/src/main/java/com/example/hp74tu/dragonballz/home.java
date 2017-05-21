@@ -21,6 +21,7 @@ public class home extends AppCompatActivity implements View.OnClickListener {
         tb =(ToggleButton)findViewById(R.id.songcntrl) ;
         tb.setOnClickListener(this);
 
+
     }
 
     @Override
