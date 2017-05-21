@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ToggleButton;
 
-public class home extends AppCompatActivity {
+public class home extends AppCompatActivity implements View.OnClickListener {
 
     MediaPlayer song;
     ToggleButton tb;
@@ -19,9 +19,16 @@ public class home extends AppCompatActivity {
 
         song = MediaPlayer.create(home.this,R.raw.dragonball);
         tb =(ToggleButton)findViewById(R.id.songcntrl) ;
-        tb.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        tb.setOnClickListener(this);
+
+    }
+
+    @Override
+    public void onClick(View v) {
+
+        switch (v.getId())
+        {
+            case R.id.songcntrl :
                 if(tb.isChecked())
                 {
                     song.start();
@@ -30,9 +37,12 @@ public class home extends AppCompatActivity {
                 {
                     song.pause();
                 }
-            }
-        });
+                break;
 
+
+
+
+        }
 
     }
 
@@ -41,4 +51,6 @@ public class home extends AppCompatActivity {
         super.onPause();
         song.release();
     }
+
+
 }

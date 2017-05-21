@@ -13,7 +13,7 @@ import static android.R.attr.id;
 
 public class menu extends ListActivity {
 
-    String classes[]={"home","GOKU","GOHAN","VEGETA","SUPERSAIYEN","WALLPAPERS"};
+    String classes[]={"HOME","GOKU","GOHAN","VEGETA","SUPERSAIYEN","WALLPAPERS"};
     TextView content;
 
 
@@ -39,7 +39,7 @@ public class menu extends ListActivity {
 
         // ListView Clicked item value
         //String  itemValue    = (String) l.getItemAtPosition(position);
-        String itemValue = classes[position];
+        String itemValue = classes[position].toLowerCase();
 
        // content.setText("Click : \n  Position :"+itemPosition+"  \n  ListItem : " +itemValue);
 
