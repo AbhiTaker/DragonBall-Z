@@ -30,7 +30,8 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".contact"></activity>
+        <activity android:name=".contact" />
+        <activity android:name=".me"></activity>
     </application>
 
 </manifest>

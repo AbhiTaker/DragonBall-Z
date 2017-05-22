@@ -13,8 +13,8 @@ import static android.R.attr.id;
 
 public class menu extends ListActivity {
 
-    String classes[]={"Home","GOKU","GOHAN","VEGETA","SUPERSAIYEN","WALLPAPERS","Contact"};
-    String classname[]={"HOME","GOKU","GOHAN","VEGETA","SUPERSAIYEN","WALLPAPERS","CONTACT US"};
+    String classes[]={"Home","GOKU","GOHAN","VEGETA","SUPERSAIYEN","WALLPAPERS","me","Contact"};
+    String classname[]={"HOME","GOKU","GOHAN","VEGETA","SUPERSAIYEN","WALLPAPERS","ME","CONTACT US"};
     TextView content;
 
 
