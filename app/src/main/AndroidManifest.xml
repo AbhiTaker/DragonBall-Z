@@ -26,12 +26,13 @@
         <activity android:name=".menu">
             <intent-filter>
                 <action android:name="android.intent.action.MENU" />
-
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity android:name=".contact" />
-        <activity android:name=".me"></activity>
+        <activity android:name=".me" android:screenOrientation="portrait">
+
+        </activity>
     </application>
 
 </manifest>

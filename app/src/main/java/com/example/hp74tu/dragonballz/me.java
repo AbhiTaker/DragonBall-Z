@@ -2,6 +2,7 @@ package com.example.hp74tu.dragonballz;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -10,6 +11,7 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 
 import java.io.IOException;
+import java.io.InputStream;
 
 import static android.provider.MediaStore.ACTION_IMAGE_CAPTURE;
 
@@ -29,6 +31,8 @@ public class me extends AppCompatActivity implements View.OnClickListener{
         setContentView(R.layout.activity_me);
 
         init();
+        InputStream is = getResources().openRawResource(R.drawable.all);
+        bmp = BitmapFactory.decodeStream(is);
     }
 
     private void init() {
