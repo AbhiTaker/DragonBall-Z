@@ -1,2 +1,2 @@
 # DragonBall-Z
-It's an android based entertainment app
+An android based entertainment app
